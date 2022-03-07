@@ -2,15 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap");
 
 /* GLOBAL STYLING */
-h1,
-h2,
-h3 {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: bold;
-    margin: 0;
-}
-
 body {
     min-height: 100vh;
     background: #9C835F;
@@ -19,7 +10,7 @@ body {
     font-size: 4rem;
 }
 
-/* HEADER */
+/* HEADER SECTION */
 .back-button a {
     color: #724C21;
 }
@@ -48,8 +39,9 @@ body {
 }
 
 .title-text h1 {
-    font-size: 36px;
+    font-size: 2rem;
     line-height: 49px;
+    letter-spacing: 0.1rem;
     font-style: normal;
     font-weight: bold;
     text-align: center;
@@ -57,4 +49,73 @@ body {
 
 }
 
-/* END OF HEADER */
+/* END OF HEADER SECTION */
+
+/* MAIN SECTION */
+.player-title {
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.com-title {
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.figure {
+    height: 10rem;
+    text-align: center;
+}
+
+.figure input,
+.figure img {
+    height: 140px;
+    width: 110px;
+}
+
+.figure input:hover {
+    transform: scale(1.2) rotate(15deg);
+    background-color: antiquewhite;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+/* ingat di ubah2*/
+.versus {
+    color: #BD0000;
+    font-weight: bold;
+    font-family: sans-serif;
+    display: block;
+    letter-spacing: 0.1rem;
+    font-size: 8rem;
+    margin-top: 12.5rem;
+    margin-bottom: 3rem;
+}
+
+.reset-button {
+    max-width: 5rem;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    animation: rotate 1s normal;
+}
+
+@keyframes rotate {
+    50% {
+        transform: rotate(180deg);
+    }
+}
+
+/* END OF MAIN SECTION */
