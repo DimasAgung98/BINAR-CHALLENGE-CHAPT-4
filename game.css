@@ -1,0 +1,60 @@
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap");
+
+/* GLOBAL STYLING */
+h1,
+h2,
+h3 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #9C835F;
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+}
+
+/* HEADER */
+.back-button a {
+    color: #724C21;
+}
+
+.back-button a:hover {
+    color: #F9B23D;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title div {
+    margin: 0 1rem;
+}
+
+.title-logo {
+    display: flex;
+    width: 5rem;
+}
+
+.title-logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.title-text h1 {
+    font-size: 36px;
+    line-height: 49px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    color: #F9B23D;
+
+}
+
+/* END OF HEADER */
