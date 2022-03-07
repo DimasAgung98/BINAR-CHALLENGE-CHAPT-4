@@ -77,21 +77,20 @@ body {
 
 .figure input,
 .figure img {
-    height: 140px;
-    width: 110px;
+    height: 128px;
+    width: 128px;
 }
 
-.figure input:hover {
-    transform: scale(1.2) rotate(15deg);
-    background-color: antiquewhite;
-    border-radius: 10%;
+.player-box:hover {
+    background-color: #C4C4C4;
+    /* transform: scale(1.2) rotate(15deg); */
+    /* border-radius: 10%;
     -webkit-border-radius: 10%;
     -moz-border-radius: 10%;
     -ms-border-radius: 10%;
-    -o-border-radius: 10%;
+    -o-border-radius: 10%; */
 }
 
-/* ingat di ubah2*/
 .versus {
     color: #BD0000;
     font-weight: bold;
