@@ -89,7 +89,7 @@
   background-image: radial-gradient(189.96% 61.18% at 50% 38.82%,
       rgba(255, 181, 72, 0) 0%,
       rgba(52, 44, 29, 0.80319) 73.22%,
-      #08090a 99.74%), url(assets/Images/main-bg-2.jpg);
+      #08090a 99.74%), url(../images/main-bg-2.jpg);
 }
 
 @keyframes hovering {
@@ -117,7 +117,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(assets/Images/the-games-bg.jpg);
+  background-image: url(../images/the-games-bg.jpg);
 }
 
 .gameChoice--title {
@@ -138,7 +138,7 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(assets/Images/featuresV2.jpg);
+  background-image: url(../images/featuresV2.jpg);
   letter-spacing: 0.2rem;
 }
 
@@ -219,7 +219,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: radial-gradient(40% 55% at 60% 70%, rgba(0, 0, 0, 0.1) 80%, #000 99.74%), url(assets/Images/requirements.png);
+  background-image: radial-gradient(40% 55% at 60% 70%, rgba(0, 0, 0, 0.1) 80%, #000 99.74%), url(../images/requirements.png);
   box-shadow: inset 400px 0px 1000px 200px rgb(0 0 0 / 90%);
 }
 
@@ -238,7 +238,7 @@
 
 .tableBg {
   padding: 0;
-  background-image: url("assets/Images/table.png");
+  background-image: url(../images/table.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -285,7 +285,7 @@
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(assets/Images/bg-scores.jpg);
+  background-image: url(../images/bg-scores.jpg);
 }
 
 .topscoresButton {
