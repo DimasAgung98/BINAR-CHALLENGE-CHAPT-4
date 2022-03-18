@@ -81,14 +81,8 @@ body {
     width: 128px;
 }
 
-.player-box:hover {
-    background-color: #f9d3ba;
-    /* transform: scale(1.2) rotate(15deg); */
-    /* border-radius: 10%;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%;
-    -ms-border-radius: 10%;
-    -o-border-radius: 10%; */
+.player-hover:hover {
+    transform: scale(1.2) rotate(15deg);
 }
 
 .win-player,
@@ -153,3 +147,13 @@ body {
 }
 
 /* END OF MAIN SECTION */
+
+/* JAVASCRIPT SECTION  */
+.border-pick {
+    background-color: #c4c4c4;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}

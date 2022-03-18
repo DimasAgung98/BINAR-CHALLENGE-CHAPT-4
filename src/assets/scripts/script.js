@@ -8,7 +8,7 @@ const CONDITION_TABLE = [
 
 //Player cant Input Again After Choose The Option
 const disableInput = () => {
-    document.querySelectorAll(".figure").forEach(input => {
+    document.querySelectorAll(".player-hover").forEach(input => {
         input.setAttribute("disabled", "disabled")
     })
 }
@@ -51,4 +51,9 @@ const getChoice = player_choice => {
     const result = CONDITION_TABLE[player_choice][com_choice];
     //To Show The Result 
     showResult(result);
+}
+
+//RESET GAME
+const resetGame = () => {
+    console.log("Reset Game");
 }

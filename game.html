@@ -50,14 +50,17 @@
             <div class="col-lg-3">
                 <h1 class="player-title">PLAYER 1</h1>
                 <div class="row justify-content-center">
-                    <figure class="col-lg-7 pt-4 figure player-box" id="rock">
-                        <input type="image" src="src/assets/images/batu.png" onclick="getChoice(0)">
+                    <figure class="col-lg-7 pt-4 figure" id="rock">
+                        <input type="image" src="src/assets/images/batu.png" class="player-hover"
+                            onclick="getChoice(0)">
                     </figure>
-                    <figure class="col-lg-7 pt-4 figure player-box" id="paper">
-                        <input type="image" src="src/assets/images/kertas.png" onclick="getChoice(1)">
+                    <figure class="col-lg-7 pt-4 figure" id="paper">
+                        <input type="image" src="src/assets/images/kertas.png" class="player-hover" onclick="
+                            getChoice(1)">
                     </figure>
-                    <figure class="col-lg-7 pt-4 figure player-box" id="scissors">
-                        <input type="image" src="src/assets/images/gunting.png" onclick="getChoice(2)">
+                    <figure class="col-lg-7 pt-4 figure" id="scissors">
+                        <input type="image" src="src/assets/images/gunting.png" class="player-hover" onclick="
+                            getChoice(2)">
                     </figure>
                 </div>
             </div>
@@ -70,7 +73,7 @@
                             VS
                         </p>
                     </div>
-                    <div class="col win-player" id="win-player">
+                    <div class="col win-player" id="player-win">
                         <p>
                             PLAYER 1
                         </p>
@@ -78,7 +81,7 @@
                             WIN
                         </p>
                     </div>
-                    <div class="col win-com" id="win-com">
+                    <div class="col win-com" id="com-win">
                         <p>
                             COM
                         </p>
