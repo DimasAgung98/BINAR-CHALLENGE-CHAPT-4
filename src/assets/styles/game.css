@@ -82,13 +82,48 @@ body {
 }
 
 .player-box:hover {
-    background-color: #C4C4C4;
+    background-color: #f9d3ba;
     /* transform: scale(1.2) rotate(15deg); */
     /* border-radius: 10%;
     -webkit-border-radius: 10%;
     -moz-border-radius: 10%;
     -ms-border-radius: 10%;
     -o-border-radius: 10%; */
+}
+
+.win-player,
+.win-com {
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    margin-top: 10rem;
+    background-color: #4C9654;
+    transform: rotate(-15deg);
+    height: 10rem;
+    padding-top: 2.5rem;
+    margin-bottom: 10rem;
+    display: none;
+}
+
+.draw {
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    margin-top: 10rem;
+    background-color: #035B0C;
+    transform: rotate(-15deg);
+    height: 10rem;
+    padding-top: 3.5rem;
+    margin-bottom: 10rem;
+    display: none;
 }
 
 .versus {

@@ -20,9 +20,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="src/assets/styles/game.css">
 
-    <!-- Javascript -->
-    <link rel="stylesheet" href="src/assets/scripts/script.js">
-
     <!-- Title -->
     <link rel="icon" type="image/png" href="src/assets/images/Dimas.png">
     <title>The Game</title>
@@ -54,13 +51,13 @@
                 <h1 class="player-title">PLAYER 1</h1>
                 <div class="row justify-content-center">
                     <figure class="col-lg-7 pt-4 figure player-box" id="rock">
-                        <input type="image" src="src/assets/images/batu.png">
+                        <input type="image" src="src/assets/images/batu.png" onclick="getChoice(0)">
                     </figure>
                     <figure class="col-lg-7 pt-4 figure player-box" id="paper">
-                        <input type="image" src="src/assets/images/kertas.png">
+                        <input type="image" src="src/assets/images/kertas.png" onclick="getChoice(1)">
                     </figure>
                     <figure class="col-lg-7 pt-4 figure player-box" id="scissors">
-                        <input type="image" src="src/assets/images/gunting.png">
+                        <input type="image" src="src/assets/images/gunting.png" onclick="getChoice(2)">
                     </figure>
                 </div>
             </div>
@@ -73,7 +70,7 @@
                             VS
                         </p>
                     </div>
-                    <!-- <div class="col win-player" id="win-player">
+                    <div class="col win-player" id="win-player">
                         <p>
                             PLAYER 1
                         </p>
@@ -93,7 +90,7 @@
                         <p>
                             DRAW
                         </p>
-                    </div> -->
+                    </div>
                 </div>
             </div>
 
@@ -120,6 +117,8 @@
         </main>
         <!-- Main Section End-->
     </div>
+    <!-- Javascript -->
+    <script src="src/assets/scripts/script.js"></script>
 </body>
 
 </html>
