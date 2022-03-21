@@ -6,7 +6,7 @@ const CONDITION_TABLE = [
 ]
 // "D" = Draw, "P" = Player 1 win, "C" = Com win
 
-//Player cant Input Again After Choose The Option
+//Player can't Input Again After Choose The Option (using arrow function)
 const disableInput = () => {
     document.querySelectorAll(".player-hover").forEach(input => {
         input.setAttribute("disabled", "disabled")
@@ -27,6 +27,8 @@ const showResult = result => {
     disableInput()
 }
 
+console.log("Play Binar Traditional Game");
+console.log("---------------------------");
 
 //Player 1 & COM CHOICE
 const getChoice = player_choice => {
@@ -47,13 +49,32 @@ const getChoice = player_choice => {
         player_choice.classList.remove("player-box");
     })
 
-    //Game Result
-    const result = CONDITION_TABLE[player_choice][com_choice];
+    //GAME RESULT
+    const result = CONDITION_TABLE[com_choice][player_choice];
     //To Show The Result 
     showResult(result);
 }
 
-//RESET GAME
+//RESET GAME (using arrow function)
 const resetGame = () => {
     console.log("Reset Game");
+    console.log("---------------------------");
+
+    document.querySelectorAll(".border-pick").forEach(input => {
+        input.removeAttribute("disabled");
+    })
+
+    document.getElementById("versus").style.display = "block";
+    document.getElementById("player-win").style.display = "none";
+    document.getElementById("com-win").style.display = "none";
+    document.getElementById("draw").style.display = "none";
+
+    document.querySelectorAll(".border-pick").forEach(choice => {
+        choice.classList.add("player-hover");
+        choice.style.cursor = "pointer";
+    })
+
+    document.querySelectorAll(".figure").forEach(figure => {
+        figure.classList.remove("border-pick");
+    })
 }
