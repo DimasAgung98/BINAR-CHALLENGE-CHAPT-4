@@ -2,6 +2,7 @@
 let nama = prompt("Silahkan Tulis Nama Anda:");
 nama = nama.toUpperCase();
 document.getElementById("username").innerHTML = nama;
+document.getElementById("playerwin").innerHTML = nama;
 
 //Array Game Condition
 const CONDITION_TABLE = [
@@ -13,7 +14,7 @@ const CONDITION_TABLE = [
 
 //Player can't Input Again After Choose The Option (using arrow function)
 const disableInput = () => {
-    document.querySelectorAll(".player").forEach(input => {
+    document.querySelectorAll("input").forEach(input => {
         input.setAttribute("disabled", "disabled")
     })
 }
@@ -39,6 +40,8 @@ console.log("---------------------------");
 const getChoice = player_choice => {
     const PLAYER_CHOICE = ["rock", "paper", "scissors"];
     const COM_CHOICE = ["com-rock", "com-paper", "com-scissors"];
+    const AUDIO_EFFECT = document.getElementById("click");
+    AUDIO_EFFECT.play();
 
     //TEXT CONSOLE PLAYER CHOOSE RESULT
     console.log(`${nama} Choose :`, PLAYER_CHOICE[player_choice]);
@@ -65,7 +68,7 @@ const resetGame = () => {
     console.log("Reset Game");
     console.log("---------------------------");
 
-    document.querySelectorAll(".player").forEach(input => {
+    document.querySelectorAll("input").forEach(input => {
         input.removeAttribute("disabled");
     })
 

@@ -4,10 +4,14 @@
 /* GLOBAL STYLING */
 body {
     min-height: 100vh;
-    background-color: #9C835F;
+    background-color: #E2E0DD;
     display: flex;
     flex-direction: column;
     font-size: 4rem;
+}
+
+header {
+    background-color: white;
 }
 
 /* HEADER SECTION */
@@ -96,7 +100,6 @@ body {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     margin-top: 10rem;
-    background-color: #4C9654;
     transform: rotate(-15deg);
     height: 10rem;
     padding-top: 2.5rem;
@@ -104,8 +107,16 @@ body {
     display: none;
 }
 
+.win-player {
+    background-color: #4C9654;
+}
+
+.win-com {
+    background-color: red;
+}
+
 .draw {
-    color: white;
+    color: black;
     font-family: sans-serif;
     letter-spacing: 0.2rem;
     font-weight: bold;
@@ -113,7 +124,7 @@ body {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     margin-top: 10rem;
-    background-color: #035B0C;
+    background-color: yellow;
     transform: rotate(-15deg);
     height: 10rem;
     padding-top: 3.5rem;
@@ -151,7 +162,7 @@ body {
 
 /* JAVASCRIPT SECTION  */
 .border-pick {
-    background-color: #c4c4c4;
+    background-color: #737373;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
