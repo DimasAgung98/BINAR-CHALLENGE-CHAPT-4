@@ -7,6 +7,8 @@ document.getElementById("playerwin").innerHTML = nama;
 //Audio Customize
 let audio = document.getElementById("bgaudio");
 audio.volume = 0.3;
+audio.play();
+audio.loop = true;
 
 //Array Game Condition
 const CONDITION_TABLE = [
