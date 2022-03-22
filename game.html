@@ -26,6 +26,7 @@
 </head>
 
 <body>
+    <audio autoplay loop src="src/assets/mp3/Awakening.mp3"></audio>
     <div class="container-fluid">
         <!-- Header Section -->
         <header>
@@ -48,18 +49,17 @@
         <main class="row justify-content-center mt-3">
             <!-- player Section -->
             <div class="col-lg-3">
-                <h1 class="player-title">PLAYER 1</h1>
+                <h1 id="username" class="player-title">PLAYER 1</h1>
                 <div class="row justify-content-center">
                     <figure class="col-lg-7 pt-4 figure" id="rock">
-                        <input type="image" src="src/assets/images/batu.png" class="player-hover"
-                            onclick="getChoice(0)">
+                        <input type="image" src="src/assets/images/batu.png" class="player" onclick="getChoice(0)">
                     </figure>
                     <figure class="col-lg-7 pt-4 figure" id="paper">
-                        <input type="image" src="src/assets/images/kertas.png" class="player-hover" onclick="
+                        <input type="image" src="src/assets/images/kertas.png" class="player" onclick="
                             getChoice(1)">
                     </figure>
                     <figure class="col-lg-7 pt-4 figure" id="scissors">
-                        <input type="image" src="src/assets/images/gunting.png" class="player-hover" onclick="
+                        <input type="image" src="src/assets/images/gunting.png" class="player" onclick="
                             getChoice(2)">
                     </figure>
                 </div>
@@ -100,7 +100,7 @@
             <!-- COM Section -->
             <div class="col-3">
                 <h1 class="com-title">COM</h1>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center" style="transform: scaleX(-1);">
                     <figure class="col-lg-7 pt-4 figure" id="com-rock">
                         <img src="src/assets/images/batu.png" alt="com-rock">
                     </figure>

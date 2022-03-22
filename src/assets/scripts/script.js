@@ -1,3 +1,8 @@
+//Name Customize
+let nama = prompt("Silahkan Tulis Nama Anda:");
+nama = nama.toUpperCase();
+document.getElementById("username").innerHTML = nama;
+
 //Array Game Condition
 const CONDITION_TABLE = [
     ["D", "P", "C"],
@@ -8,7 +13,7 @@ const CONDITION_TABLE = [
 
 //Player can't Input Again After Choose The Option (using arrow function)
 const disableInput = () => {
-    document.querySelectorAll(".player-hover").forEach(input => {
+    document.querySelectorAll(".player").forEach(input => {
         input.setAttribute("disabled", "disabled")
     })
 }
@@ -17,7 +22,7 @@ const disableInput = () => {
 const showResult = result => {
     const statusResult = {
         "D": ["Result : Draw!", "draw"],
-        "P": ["Result : Player 1 win!", "player-win"],
+        "P": [`Result : ${nama} win`, "player-win"],
         "C": ["Result : Com win!", "com-win"]
     }
 
@@ -36,7 +41,7 @@ const getChoice = player_choice => {
     const COM_CHOICE = ["com-rock", "com-paper", "com-scissors"];
 
     //TEXT CONSOLE PLAYER CHOOSE RESULT
-    console.log("Player 1 Choose :", PLAYER_CHOICE[player_choice]);
+    console.log(`${nama} Choose :`, PLAYER_CHOICE[player_choice]);
 
     //TEXT CONSOLE COM RANDOM RESULT
     const com_choice = Math.floor(Math.random() * 3); //Untuk merandom pilihan com
@@ -45,8 +50,8 @@ const getChoice = player_choice => {
     //DISPLAY PLAYER CHOISE WITH BORDER
     document.getElementById(PLAYER_CHOICE[player_choice]).classList.add("border-pick");
     document.getElementById(COM_CHOICE[com_choice]).classList.add("border-pick");
-    document.querySelectorAll(".figure").forEach(player_choice => {
-        player_choice.classList.remove("player-box");
+    document.querySelectorAll("input").forEach(player_choice => {
+        player_choice.classList.remove("player");
     })
 
     //GAME RESULT
@@ -60,7 +65,7 @@ const resetGame = () => {
     console.log("Reset Game");
     console.log("---------------------------");
 
-    document.querySelectorAll(".border-pick").forEach(input => {
+    document.querySelectorAll(".player").forEach(input => {
         input.removeAttribute("disabled");
     })
 
@@ -69,9 +74,8 @@ const resetGame = () => {
     document.getElementById("com-win").style.display = "none";
     document.getElementById("draw").style.display = "none";
 
-    document.querySelectorAll(".border-pick").forEach(choice => {
-        choice.classList.add("player-hover");
-        choice.style.cursor = "pointer";
+    document.querySelectorAll("input").forEach(choice => {
+        choice.classList.add("player");
     })
 
     document.querySelectorAll(".figure").forEach(figure => {
