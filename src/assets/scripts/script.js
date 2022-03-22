@@ -4,6 +4,10 @@ nama = nama.toUpperCase();
 document.getElementById("username").innerHTML = nama;
 document.getElementById("playerwin").innerHTML = nama;
 
+//Audio Customize
+let audio = document.getElementById("bgaudio");
+audio.volume = 0.3;
+
 //Array Game Condition
 const CONDITION_TABLE = [
     ["D", "P", "C"],
